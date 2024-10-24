@@ -1,0 +1,91 @@
+<body>
+    <style>
+       
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d); /* Gradient Background */
+  padding: 20px 50px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Soft shadow */
+  transition: background 0.5s ease-in-out; /* Smooth transition for hover */
+}
+
+.main-nav:hover {
+  background: linear-gradient(135deg, #00c6ff, #0072ff, #fdbb2d); /* On hover, change the gradient */
+}
+
+.logo h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 3px; /* Spacing between letters for elegance */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Glow effect */
+  transition: transform 0.3s ease;
+}
+
+.logo h1:hover {
+  transform: scale(1.1); /* Scale on hover */
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.nav-links a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  background-color: aqua;
+  transition: width 0.4s ease;
+}
+
+.nav-links a:hover::before {
+  width: 100%; /* Expand underline on hover */
+}
+
+.nav-links a:hover {
+  color: #ffb703; /* Change text color */
+  letter-spacing: 1px; /* Slight letter spacing on hover */
+  text-shadow: 0px 4px 10px rgba(255, 255, 255, 0.8); /* Glow effect on hover */
+}
+
+.nav-links a:active {
+  transform: scale(0.95); /* Shrink on click for feedback */
+} 
+
+
+    </style>
+</body>
+<header>
+    <nav class="main-nav">
+        <div class="logo">
+            <h1>VOYAGE VISTA</h1>
+        </div>
+        <div class="nav-links">
+            <a href="mainPage.php">Home</a>
+            <a href="destination.php">Destinations</a>
+             <a href="route2.php">Map</a>
+            <!-- <a href="#">Your Reviews</a> -->
+            <a href="feedback.php">Feedback</a>
+            <!-- <a href="#">Blog</a> -->
+            <a href="profile.php">Profile</a> 
+        </div>
+        <div class="nav-links">
+             <a href="signin.html">Logout</a>
+        </div> 
+    </nav>
+</header>
